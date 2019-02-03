@@ -17,3 +17,6 @@ script:
       on_failure: always
       on_succes: never
 
+after_succes:
+  - mvn tomcat7:deploy -Pdeployremote
+
