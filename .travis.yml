@@ -12,6 +12,8 @@ notifications:
   slack:
       on_failure: -always
       on_succes: -always
+      after_succes:
+      -mvn tomcat7:deploy -Pdeployremote
 
 
 
