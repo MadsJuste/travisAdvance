@@ -8,15 +8,18 @@ cache:
 
 
 script:
-  - mvn verify -Ptest
+  mvn test
+  mvn verify
+  mvn verify -Ptest
 
 notifications:
+  slack:
     email:
-      - Madsjuste89@gmail.com
+      Madsjuste89@gmail.com
 
       on_failure: always
       on_succes: always
 
 after_succes:
-  - mvn tomcat7:deploy -Pdeployremote
+  mvn tomcat7:deploy -Pdeployremote
 
