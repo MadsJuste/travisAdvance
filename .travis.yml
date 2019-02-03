@@ -9,18 +9,15 @@ cache:
 notifications:
   slack:
     email:
-      Madsjuste89@gmail.com
+      -Madsjuste89@gmail.com
 
-      on_failure: always
-      on_succes: always
-
-after_succes:
-  mvn tomcat7:deploy -Pdeployremote
+      on_failure: -always
+      on_succes: -never
+      after_succes:
+      -mvn tomcat7:deploy -Pdeployremote
 
 script:
-  mvn test
-  mvn verify
-  mvn verify -Ptest
+ -mvn verify -Ptest
 
 
 
