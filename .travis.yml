@@ -10,3 +10,10 @@ cache:
 script:
   - mvn verify -Ptest
 
+  notifications:
+    email:
+      - Madsjuste89@gmail.com
+
+      on_failure: always
+      on_succes: never
+
