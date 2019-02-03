@@ -12,14 +12,5 @@ script:
   mvn verify
   mvn verify -Ptest
 
-notifications:
-  slack:
-    email:
-      Madsjuste89@gmail.com
 
-      on_failure: always
-      on_succes: always
-
-after_succes:
-  mvn tomcat7:deploy -Pdeployremote
 
