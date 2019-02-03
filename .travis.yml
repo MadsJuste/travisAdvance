@@ -10,12 +10,12 @@ cache:
 script:
   - mvn verify -Ptest
 
-  notifications:
+notifications:
     email:
       - Madsjuste89@gmail.com
 
       on_failure: always
-      on_succes: never
+      on_succes: always
 
 after_succes:
   - mvn tomcat7:deploy -Pdeployremote
