@@ -219,7 +219,7 @@
                         <configuration>
                          <url>https://madsjustesen.dk/manager/text</url>  
                          <server>TomcatServer</server>
-                         <path>/NameToDeployUnder</path>
+                         <path>/WebCalculator</path>
                          <username>Juste</username>
                          <password>admin</password>
                          <update>true</update>
