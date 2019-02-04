@@ -7,17 +7,17 @@ cache:
     -$HOME/.m2
       
 script:
- - mvn test
+ - mvn verify -Ptest
 
 notifications:
   email:
     recipients:
       - madsjuste89@gmail.com
-    on_success: never # default: change
-    on_failure: always # default: always
+    on_success: never 
+    on_failure: always 
 
  
 after_succes:
-      - mvn tomcat7:deploy -Pdeployremote
+      - mvn tomcat7:deploy -Premote
      
 
