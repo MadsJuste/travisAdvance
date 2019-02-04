@@ -18,6 +18,6 @@ notifications:
 
  
 after_succes:
-      - mvn tomcat7:deploy -Pdeployremote
+      - mvn tomcat7:deploy -Premote
      
 
