@@ -19,7 +19,9 @@ import utils.HttpClient;
  * @author Madsj
  */
 public class WebCalculatorTest {
-    HttpClient http = new HttpClient("http://localhost:7777/WebCalculator/Calculator");
+    HttpClient http = new HttpClient("http://localhost:7777/WebApplication/Calculator");
+
+
     public WebCalculatorTest() {
     }
     

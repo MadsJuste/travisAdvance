@@ -27,6 +27,9 @@ public class HttpClient {
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("GET");
     con.setRequestProperty("Accept", "text/plain;charset=UTF-8");
+    if(con.getResponseCode() == 400){
+        throw new ArithmeticException();
+    }
     String result;
     try (Scanner scan = new Scanner(con.getInputStream())) {
       result = null;
@@ -38,7 +41,7 @@ public class HttpClient {
   }
   
   public static void main(String[] args) throws IOException {
-    HttpClient client = new HttpClient("http://localhost:7777/WebCalculator/Calculator");
+    HttpClient client = new HttpClient("http://localhost:8084/WebCalculator/Calculator");
     String res = client.makeHttpRequest("?operation=add&n1=2&n2=3");
     System.out.println(res);
   }
