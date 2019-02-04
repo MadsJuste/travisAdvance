@@ -8,8 +8,10 @@ cache:
       
 script:
  - mvn verify -Ptest
-  after_succes:
+  
+after_succes:
   - mvn tomcat7:deploy -Premote
+
 notifications:
   email:
     recipients:
