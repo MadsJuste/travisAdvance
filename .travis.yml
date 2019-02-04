@@ -7,7 +7,7 @@ cache:
     - $HOME/.m2
       
 script:
- - mvn verify -Ptest
+ - mvn test
 
 notifications:
   email:
@@ -18,6 +18,6 @@ notifications:
 
  
 after_succes:
-      - mvn verify -Ptest tomcat7:deploy -Pdeployremote
+      - mvn tomcat7:deploy -Premote
      
 
