@@ -38,7 +38,7 @@ public class HttpClient {
   }
   
   public static void main(String[] args) throws IOException {
-    HttpClient client = new HttpClient("https://madsjustesen.dk/NameToDeployUnder/Calculator");
+    HttpClient client = new HttpClient("http://localhost:7777/WebCalculator/Calculator");
     String res = client.makeHttpRequest("?operation=add&n1=2&n2=3");
     System.out.println(res);
   }
