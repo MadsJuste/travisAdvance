@@ -7,7 +7,7 @@ cache:
     -$HOME/.m2
       
 script:
- - mvn verify -Ptest
+ - mvn verify
 
 notifications:
   email:
