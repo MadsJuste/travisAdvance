@@ -19,7 +19,7 @@ import utils.HttpClient;
  * @author Madsj
  */
 public class WebCalculatorTest {
-    HttpClient http = new HttpClient("https://madsjustesen.dk/NameToDeployUnder/Calculator");
+    HttpClient http = new HttpClient("https://madsjustesen.dk/WebCalculator/Calculator");
     public WebCalculatorTest() {
     }
     
