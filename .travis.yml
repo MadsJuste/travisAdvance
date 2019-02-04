@@ -12,8 +12,7 @@ script:
 notifications:
   email:
     recipients:
-      - one@example.com
-      - other@example.com
+      - madsjuste89@gmail.com
     on_success: never # default: change
     on_failure: always # default: always
 
