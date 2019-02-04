@@ -1,3 +1,5 @@
+package unittest;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -44,6 +46,19 @@ public class testCalculator {
      assertEquals(result,3);
      }
      
+
+     @Test
+     public void add2() {
+     int result = calc.add(8, 2);
+     assertEquals(result,10);
+     }
+
+     @Test
+     public void mul2() {
+     int result = calc.mul(4, 4);
+     assertEquals(result,16);
+     }
+
      @Test
      public void sub() {
      int result = calc.sub(2, 1);

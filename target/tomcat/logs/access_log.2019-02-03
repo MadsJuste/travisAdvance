@@ -1,8 +1,0 @@
-127.0.0.1 - - [03/Feb/2019:19:26:47 +0100] "GET /WebCalculator/Calculator?operation=add&n1=2&n2=3 HTTP/1.1" 404 - http-bio-7777-exec-1 0
-127.0.0.1 - - [03/Feb/2019:19:26:47 +0100] "GET /WebCalculator/Calculator?operation=div&n1=4&n2=2 HTTP/1.1" 404 - http-bio-7777-exec-2 0
-127.0.0.1 - - [03/Feb/2019:19:26:47 +0100] "GET /WebCalculator/Calculator?operation=mul&n1=2&n2=3 HTTP/1.1" 404 - http-bio-7777-exec-3 0
-127.0.0.1 - - [03/Feb/2019:19:26:47 +0100] "GET /WebCalculator/Calculator?operation=sub&n1=4&n2=3 HTTP/1.1" 404 - http-bio-7777-exec-4 0
-127.0.0.1 - - [03/Feb/2019:19:28:04 +0100] "GET /WebCalculator/Calculator?operation=add&n1=2&n2=3 HTTP/1.1" 404 - http-bio-7777-exec-1 0
-127.0.0.1 - - [03/Feb/2019:19:28:04 +0100] "GET /WebCalculator/Calculator?operation=div&n1=4&n2=2 HTTP/1.1" 404 - http-bio-7777-exec-2 0
-127.0.0.1 - - [03/Feb/2019:19:28:04 +0100] "GET /WebCalculator/Calculator?operation=mul&n1=2&n2=3 HTTP/1.1" 404 - http-bio-7777-exec-3 0
-127.0.0.1 - - [03/Feb/2019:19:28:04 +0100] "GET /WebCalculator/Calculator?operation=sub&n1=4&n2=3 HTTP/1.1" 404 - http-bio-7777-exec-4 0
