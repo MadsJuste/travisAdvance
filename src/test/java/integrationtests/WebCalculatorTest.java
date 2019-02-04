@@ -55,7 +55,7 @@ public class WebCalculatorTest {
      @Test
      public void mul() throws IOException {
       String result = http.makeHttpRequest("?operation=mul&n1=2&n2=3");
-      assertEquals(result,"Result of: 2*3= 6");
+      assertEquals(result,"Result of: 2*3= 5");
      }
      @Test
      public void div() throws IOException {
