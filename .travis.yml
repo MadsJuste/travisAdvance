@@ -17,7 +17,7 @@ notifications:
     on_failure: always # default: always
 
  
- after_succes:
-      - mvn tomcat7:redeploy -Pdeployremote
+after_succes:
+      - mvn tomcat7:redeploy -Premote
      
 
