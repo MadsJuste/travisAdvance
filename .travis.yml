@@ -1,7 +1,12 @@
 language: java
 
 jdk: oraclejdk8
-
+notifications:
+  email:
+    recipients:
+      - madsjuste89@gmail.com
+    on_success: never 
+    on_failure: always 
 cache:
   directories:
     - $HOME/.m2
@@ -12,12 +17,7 @@ script:
 after_succes:
   - mvn tomcat7:deploy -Premote
 
-notifications:
-  email:
-    recipients:
-      - madsjuste89@gmail.com
-    on_success: never 
-    on_failure: always 
+
 
  
 
